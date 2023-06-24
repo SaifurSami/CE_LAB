@@ -50,7 +50,6 @@ title(['HDB3 : [' num2str(bits) ']']);
 
 %demodulation
 lastNonZero = -voltage;
-NonZeroPulse = 0;
 
 for i = 1 : length(t)
   if(rem(i,n) == 0 && y(i) == 0)
