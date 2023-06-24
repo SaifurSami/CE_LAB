@@ -44,5 +44,5 @@ for i = 1 : length(t)
     receiving_bits(i / n) = 0;
   endif
 end
-%disp("OK DUCK");
+disp("Differential Manchester Decoding : ");
 disp(receiving_bits);
