@@ -38,7 +38,6 @@ for i = 1 : length(bits)
   endif
 endfor
 
-%disp("FUCK");
 plot(t,y,'LineWidth',2);
 axis([0 T -voltage-1 voltage+1]);
 grid on;
