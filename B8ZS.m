@@ -72,5 +72,5 @@ for i = 1 : length(t)
       flg = 1;
   endif
 endfor
-%disp("OK DUCK");
+disp("B8ZS Decoding : ");
 disp(receiving_bits);

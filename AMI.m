@@ -38,5 +38,5 @@ for i = 1 : length(t)
       receiving_bits(i / n) = 1;
   endif
 end
-%disp("OK DUCK");
+disp("AMI Decoding : ");
 disp(receiving_bits);
