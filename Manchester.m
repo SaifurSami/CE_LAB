@@ -2,7 +2,7 @@ clc;
 close all;
 clear all;
 
-bits = [0,1,0,0,1,1]; %6
+bits = [0,1,0,0,1,1]; 
 
 bitrate = 1;
 voltage = 5;
@@ -38,5 +38,5 @@ for i = 1 : length(t)
     receiving_bits(i / n) = 1;
   endif
 end
-%disp("OK DUCK");
+disp("Manchester Decoding : ");
 disp(receiving_bits);
