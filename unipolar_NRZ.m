@@ -2,7 +2,7 @@ clc;
 close all;
 clear all;
 
-bits = [0,1,1,0,1,0,1,0,1,1,1,1]; %12
+bits = [0,1,1,0,1,0,1,0,1,1,1,1]; 
 
 bitrate = 1;
 voltage = 5;
@@ -34,5 +34,5 @@ for i = 1 : length(t)
     receiving_bits(i / n) = y(i) / voltage;
   endif
 end
-%disp("OK DUCK");
+disp("Unipolar NRZ Decoding : ");
 disp(receiving_bits);
