@@ -2,7 +2,7 @@ clc;
 close all;
 clear all;
 
-bits = [1,0,1,0,0,1,0,1]; %8
+bits = [1,0,1,0,0,1,0,1]; 
 
 bitrate = 1;
 voltage = 5;
