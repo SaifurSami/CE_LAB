@@ -46,7 +46,7 @@ endfor
 plot(t,y,'LineWidth',2);
 axis([0 T -voltage-1 voltage+1]);
 grid on;
-title(['B8ZS : [' num2str(bits) ']']);
+title(['HDB3 : [' num2str(bits) ']']);
 
 %demodulation
 lastNonZero = -voltage;
@@ -64,5 +64,4 @@ for i = 1 : length(t)
   endif
 endfor
 disp("HDB3 Decoding : ");
-%receiving_bits = bits();
 disp(receiving_bits);
