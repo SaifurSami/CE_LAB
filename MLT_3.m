@@ -2,7 +2,7 @@ clc;
 close all;
 clear all;
 
-bits = [0,1,0,1,1,0,1,1]; %8
+bits = [0,1,0,1,1,0,1,1]; 
 
 bitrate = 1;
 voltage = 5;
@@ -50,5 +50,5 @@ for i = 1 : length(t)
       lastLevel = y(i);
   endif
 end
-%disp("OK DUCK");
+disp("MLT-3 Decoding : ");
 disp(receiving_bits);
