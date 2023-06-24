@@ -2,7 +2,7 @@ clc;
 close all;
 clear all;
 
-bits = [1,1,0,0,1,0,1,1,1,0]; %8
+bits = [1,1,0,0,1,0,1,1,1,0]; 
 
 bitrate = 1;
 voltage = 5;
@@ -39,5 +39,5 @@ for i = 1 : length(t)
     temp = -temp;
   endif
 end
-%disp("OK DUCK");
+disp("Polar NRZ-I Decoding : ");
 disp(receiving_bits);
