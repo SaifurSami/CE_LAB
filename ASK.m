@@ -2,7 +2,10 @@ clc;
 clear all;
 close all;
 
-bits = [1 0 1 1 0 1 0 0 0 0 1];
+bits = [1 0 1 1 0 1 0 0 1 0 0 1];
+disp("Bits : ");
+disp(bits);
+
 voltage = 5;
 am = 5;
 fm = 5;
@@ -43,8 +46,6 @@ title(['Encoded Digital Signal : [' num2str(bits) ']']);
 grid on;
 
 %ASK Modulation
-ask = zeros(1,length(bits));
-
 for i = 1 : length(t)
   if(x_digital(i) == voltage)
     ask(i) = x_analog(i);
