@@ -3,6 +3,8 @@ clear all;
 close all;
 
 bits = [1 1 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1];
+disp("Bits : ");
+disp(bits);
 
 fc = 3;
 df = 2;
@@ -61,8 +63,6 @@ title(['Encoded Digital Signal : [' num2str(bits) ']']);
 grid on;
 
 %FSK Modulation
-fsk = zeros(1,length(t));
-
 for i = 1 : length(bits)
   from = (i -1) * fs / bitrate + 1;
   to = i * fs / bitrate;
