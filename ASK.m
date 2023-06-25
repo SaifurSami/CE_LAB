@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 
-bits = [1 0 1 1 0 1 0 0 1 0 0 1];
+bits = [1 1 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1];
 disp("Bits : ");
 disp(bits);
 
@@ -22,6 +22,7 @@ plot(t,x_analog);
 xlim([0 T]);
 ylim([-voltage-2 voltage+2]);
 title("Analog Carrier Signal");
+line([0 T],[0 0],"linestyle","--","color","r");
 grid on;
 
 
@@ -43,6 +44,7 @@ plot(t,x_digital);
 xlim([0 T]);
 ylim([-voltage-2 voltage+2]);
 title(['Encoded Digital Signal : [' num2str(bits) ']']);
+line([0 T],[0 0],"linestyle","--","color","r");
 grid on;
 
 %ASK Modulation
@@ -57,6 +59,7 @@ plot(t,ask);
 xlim([0 T]);
 ylim([-voltage-2 voltage+2]);
 title("Amplitude Shift Keying");
+line([0 T],[0 0],"linestyle","--","color","r");
 grid on;
 
 %ASK Demodulation
