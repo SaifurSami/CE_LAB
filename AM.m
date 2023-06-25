@@ -59,9 +59,3 @@ line([0 T],[0 0],"linestyle","--","color","r");
 ##m(t) = message/modulating signal
 ##c(t) = carrire signal
 ##ac = carrire amplitude
-
-  
-  
-
-
-
