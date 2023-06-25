@@ -28,6 +28,7 @@ ylim([-amplitude-2 amplitude+2]);
 xlabel("Time");
 ylabel("Amplitude");
 title("Analog Carrier Signal for Zero");
+line([0 T],[0 0],"linestyle","--","color","r");
 grid on;
 
 %Carrier Signal for One
@@ -40,6 +41,7 @@ ylim([-amplitude-2 amplitude+2]);
 xlabel("Time");
 ylabel("Amplitude");
 title("Analog Carrier Signal for One");
+line([0 T],[0 0],"linestyle","--","color","r");
 grid on;
 
 %Encoded Digital Signal
@@ -60,6 +62,7 @@ ylim([-voltage-2 voltage+2]);
 xlabel("Time");
 ylabel("Voltage");
 title(['Encoded Digital Signal : [' num2str(bits) ']']);
+line([0 T],[0 0],"linestyle","--","color","r");
 grid on;
 
 %FSK Modulation
@@ -80,6 +83,7 @@ ylim([-amplitude-2 amplitude+2]);
 xlabel("Time");
 ylabel("Amplitude");
 title("Frequency Shift Keying");
+line([0 T],[0 0],"linestyle","--","color","r");
 grid on;
 
 %FSK Demodulation
