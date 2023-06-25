@@ -32,7 +32,7 @@ title("Analog Modulating Signal");
 line([0 T],[0 0],"linestyle","--","color","r");
 
 %Amplitude Modulation
-k = am / ac; %amplitude sensitivity of AMI
+k = am / ac; %amplitude sensitivity of AM
 st1 = (1+k.*mt).* ct;
 
 subplot(413);
@@ -52,7 +52,7 @@ ylabel("Amplitude");
 title("Demodulated Signal");
 line([0 T],[0 0],"linestyle","--","color","r");
 
-##Formula
+##Formulas
 ##modulation = [1 + k.* m(t)].* c(t)
 ##demodulation = (1 / pi) * (ac + mt);
 ##k = ratio of message amplitude & carrire amplitude = am/ac
